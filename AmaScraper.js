@@ -22,6 +22,7 @@ axios.get(url)
     let publisher = $('#rpi-attribute-book_details-publisher').find('.rpi-attribute-value').text().trim();
     let language = $('#rpi-attribute-language').find('.rpi-attribute-value').text().trim()
     let date = $('#rpi-attribute-book_details-publication_date').find('.rpi-attribute-value').text().trim();
+    let coverURL =$('.frontImage').attr('src');
     
     console.log(`Book Title: ${title}`);
     console.log(`Author: ${author.join(', ')}`);
@@ -30,6 +31,7 @@ axios.get(url)
     console.log(`Language: ${language}`);
     console.log(`Date Published: ${date}`);
     console.log(`Publisher: ${publisher}`);
+    console.log(`Cover: ${coverURL}`);
   });
 
 
